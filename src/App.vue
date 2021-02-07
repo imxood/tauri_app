@@ -1,21 +1,23 @@
 <template>
 	<div id="app">
 		<img alt="Vue logo" src="./assets/logo.png" />
-		<HelloWorld msg="1. Welcome to Your Vue.js App" />
+		<HelloWorld msg="Welcome to Your Vue.js App" />
 		<MyForm />
+		<Button />
 	</div>
 </template>
 
 <script>
 import MyForm from "./components/MyForm.vue";
 import HelloWorld from "./components/HelloWorld.vue";
-// import { invoke } from 'tauri/api/tauri';
+import Button from "./components/Button.vue"
 
 export default {
 	name: "App",
 	components: {
 		HelloWorld,
-		MyForm
+		MyForm,
+		Button
 	}
 };
 </script>
